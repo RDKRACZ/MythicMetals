@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "mythicmetals",
   "version": "${version}",
-
   "name": "Mythic Metals",
   "description": "Adds many new ores, tools and armorsets to the game. Currently in Beta!",
   "authors": [
@@ -13,10 +12,8 @@
     "sources": "https://github.com/Noaaan/MythicMetals",
     "issues": "https://github.com/Noaaan/MythicMetals/issues"
   },
-
   "license": "MIT",
   "icon": "assets/mythicmetals/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -32,12 +29,15 @@
   "mixins": [
     "mythicmetals.mixins.json"
   ],
-
-
   "depends": {
     "fabricloader": ">=0.7.4",
     "alloy_forgery": ">=1.0.5",
     "fabric": ">=0.26.0",
-    "minecraft": ">=1.16.3"
+    "minecraft": ">=1.16.3",
+    "cloth-config2": ">=4.11.26"
+
+  },
+  "suggests": {
+    "modmenu": ">=1.16.0"
   }
 }
